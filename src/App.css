@@ -1,38 +1,52 @@
 .App {
-  text-align: center;
+  text-align: justify;
+  font-size: large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  font-weight: bold;
+  color: rgb(60, 4, 4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: rgb(3, 3, 63);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.StudentCard {
+  border-radius: 5%;
+  border: 2px solid rgb(15, 150, 234);
+  background-color: rgb(168, 196, 214);
+  padding: 20px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 450px;
+  height: 500px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.StudentInfo {
+  margin-top: 0;
+  position: absolute;
+  top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.studentScore {
+  border: 1px;
+  border-style: dashed;
+  border-radius: 10%;
+  padding: 10px;
+  position: absolute;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+
 }
